@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="{{ system_config.Project_Description }}">
+    <link rel="stylesheet" href="/static/{{ system_config.Theme }}/css/index.min.css">
+    <link rel="shortcut icon" href="{{ system_config.Project_URL }}/user_file/favicon.ico">
+    <title>{{ system_config.Project_Name }}</title>
+</head>
+<body>
+<article class="container">
+    <ul class="menu">
+    {% include system_config.Theme+"/public/nav.html" %}
+    </ul>
+    <article class="main page">
+        <header class="header site">
+            <h1 class="title">{{ system_config.Project_Name }}</h1>
+            <h2 class="subtitle">{{ system_config.Project_Description }}</h2>
+    </header>
+    <ul class="article-list">
+    {% for page_info in page_list %}
+    <li class="article">
+        <a class="title" href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a>
+        <section class="preview">{{ page_info.excerpt }}</section>
+            <section class="info">
+                <span class="date" data-time="{{ page_info.time }}"><span class="from"></span></span>
+            </section>
+        </li>
+    </ul>
+    <section class="page-nav">
+        {% if now_page!=1 %}<a class="prev" href="{% if static %}/index_{{ last_page }}.html{% else %}/index/p/{{ last_page }}{% endif %}">Prev</a>{% endif %}
+        <span class="nav">{{ now_page }} / {{ page_row }}</span>
+        {% if now_page!=page_row and page_row !=1 %}<a class="next" href="{% if static %}/index_{{ next_page }}.html{% else %}/index/p/{{ next_page }}{% endif %}">Next</a>{% endif %}
+        </section>
+    </article>
+</article>
+{% include system_config.Theme+"/public/footer.html" %}

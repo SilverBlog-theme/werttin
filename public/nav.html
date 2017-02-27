@@ -1,0 +1,5 @@
+<li class="menu-item"><a href="/rss/">¶©ÔÄ</a></li>
+{% for item in menu_list %}
+<li class="menu-item"><a href="{% if "absolute" not in item %}/{% elif not item.absolute %}/{% endif %}{{ item.url }}{% if static %}.html{% endif %}">{{ item.name }}</a></li>
+{% endfor %}
+<li class="menu-item"><a href="/">Ê×Ò³</a></li>
