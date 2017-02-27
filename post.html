@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="{{ system_config.Project_Description }}">
+    <link rel="stylesheet" href="/static/{{ system_config.Theme }}/css/index.min.css">
+    <link rel="shortcut icon" href="{{ system_config.Project_URL }}/user_file/favicon.ico">
+    <title>{{ system_config.Project_Name }}</title>
+</head>
+<body>
+<article class="container">
+    <ul class="menu">
+    {% include system_config.Theme+"/public/nav.html" %}
+    </ul>
+    <article class="main article">
+        <h1 class="title">{{ page_info.title }}</h1>
+        <section class="info"><span class="date" data-time="{{ page_info.time }}"><span class="from"></span></span></section>
+        <article class="content">{{ content|safe }}</article>
+        <section class="author">
+            <div class="avatar" style="background-image: url({{ system_config.Author_Image }});"></div>
+            <a class="name">{{ system_config.Author_Name }}</a>
+            <div class="intro">{{ system_config.Author_Introduction }}</div>
+        </section>
+    </article>
+</article>
+{% include system_config.Theme+"/public/footer.html" %}
