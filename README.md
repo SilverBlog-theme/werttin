@@ -2,8 +2,7 @@
 
 > An ink theme based on offical theme.
 
-[Skimige 版本传送门](https://github.com/Skimige/ink_Werttin)
-
+本主题是 [Skimige 版本](https://github.com/Skimige/ink_Werttin) 的 [SmartBlog](https://github.com/qwe7002/SmartBlog) 适配版。
 ## 使用说明
 
 ### 预览
