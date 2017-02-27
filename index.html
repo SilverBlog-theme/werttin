@@ -30,6 +30,7 @@
             </section>
         </li>
     </ul>
+    {% endfor %}
     <section class="page-nav">
         {% if now_page!=1 %}<a class="prev" href="{% if static %}/index_{{ last_page }}.html{% else %}/index/p/{{ last_page }}{% endif %}">Prev</a>{% endif %}
         <span class="nav">{{ now_page }} / {{ page_row }}</span>
