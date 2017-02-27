@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
     <meta name="description" content="{{ system_config.Project_Description }}">
     <link rel="stylesheet" href="/static/{{ system_config.Theme }}/css/index.min.css">
-    <link rel="shortcut icon" href="{{ system_config.Project_URL }}/user_file/favicon.ico">
+    <link rel="shortcut icon" href="{{ system_config.Project_URL }}/static/user_file/favicon.ico">
     <title>{{ system_config.Project_Name }}</title>
     {% include "include/head.html" %}
 </head>
@@ -25,12 +25,12 @@
     <li class="article">
         <a class="title" href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a>
         <section class="preview">{{ page_info.excerpt }}</section>
-            <section class="info">
-                <span class="date" data-time="{{ page_info.time }}"><span class="from"></span></span>
-            </section>
-        </li>
-    </ul>
+        <section class="info">
+            <span class="date" data-time="{{ page_info.time }}"><span class="from">{{ page_info.time }}</span></span>
+        </section>
+    </li>
     {% endfor %}
+    </ul>
     <section class="page-nav">
         {% if now_page!=1 %}<a class="prev" href="{% if static %}/index_{{ last_page }}.html{% else %}/index/p/{{ last_page }}{% endif %}">Prev</a>{% endif %}
         <span class="nav">{{ now_page }} / {{ page_row }}</span>
