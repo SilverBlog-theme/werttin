@@ -7,7 +7,8 @@
     <meta name="description" content="{{ system_config.Project_Description }}">
     <link rel="stylesheet" href="/static/{{ system_config.Theme }}/css/index.min.css">
     <link rel="shortcut icon" href="{{ system_config.Project_URL }}/user_file/favicon.ico">
-    <title>{{ system_config.Project_Name }}</title>
+    <title>{{ page_info.title }}</title>
+    {% include "include/head.html" %}
 </head>
 <body>
 <article class="container">
@@ -22,6 +23,9 @@
             <div class="avatar" style="background-image: url({{ system_config.Author_Image }});"></div>
             <a class="name">{{ system_config.Author_Name }}</a>
             <div class="intro">{{ system_config.Author_Introduction }}</div>
+        </section>
+        <section>
+            <!-- Your comment form here -->
         </section>
     </article>
 </article>
