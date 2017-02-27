@@ -2,6 +2,8 @@
 
 > An ink theme based on offical theme.
 
+[Skimige 版本传送门](https://github.com/Skimige/ink_Werttin)
+
 ## 使用说明
 
 ### 预览
