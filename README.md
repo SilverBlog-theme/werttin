@@ -1,57 +1,57 @@
-# ink_Werttin
+# Ink_Werttin
 
-> An ink theme based on offical theme.
+> An ink theme based on offense
 
-本主题是 [Skimige 版本](https://github.com/Skimige/ink_Werttin) 的 [SmartBlog](https://github.com/qwe7002/SmartBlog) 适配版。
-## 使用说明
+This topic is the [SmartBlog](https://github.com/qwe7002/SmartBlog) adaptation version of [Skimige Version](https://github.com/Skimige/ink_Werttin).
+## Instructions for use
 
-### 预览
+### Preview
 
-最简单的方法是去参观我的博客辣~ [传送门](http://ikevin.in)
+The easiest way is to visit my blog spicy ~ [portal](http://ikevin.in)
 
-[SmartBlog 版本，在细节上略有差异](https://www.tcdw.net/)
+[SmartBlog version, slightly different in detail](https://www.tcdw.net/)
 
-以下截图可能有点旧。
+The following screenshots may be a bit old.
 
-[首页](https://cloud.githubusercontent.com/assets/9017470/10266999/daf3a772-6ab1-11e5-9449-5bcc47eabbc7.gif) \ [文章页](https://cloud.githubusercontent.com/assets/9017470/10267001/06981ca0-6ab2-11e5-9f6e-ad007b3e66b6.gif) \ [归档页](https://cloud.githubusercontent.com/assets/9017470/10267003/26286408-6ab2-11e5-97b4-1cf25b14a98a.gif)
+[Home](https://cloud.githubusercontent.com/assets/9017470/10266999/daf3a772-6ab1-11e5-9449-5bcc47eabbc7.gif) \ [article page](https://cloud.githubusercontent.com/assets/9017470/10267001/06981ca0-6ab2-11e5-9f6e-ad007b3e66b6.gif) \ [Archive Page](https://cloud.githubusercontent.com/assets/9017470/10267003/26286408-6ab2-11e5-97b4-1cf25b14a98a.gif)
 
-### 下载
+### download
 
-```bash
+```Bash
 cd /path/to/your/SmartBlog/templates
 git clone https://github.com/tcdw/smartblog-theme-werttin
 mv smartblog-theme-werttin werttin
 mv werttin/static/werttin static/werttin
 ```
 
-### 功能
+### Features
 
- - 默认字体为 `Microsoft Yahei UI` ，对 `sans-serif` 和 `serif` 没啥好感
- - 支持 zh (Chinese) / en (English) 两种语言，请修改根目录的 `config.yml` 中此处：
+ - the default font for `Microsoft Yahei UI`, nothing to sans-serif` and` serif`
+ - support Chinese / English two languages, please modify the root directory of the `config.yml` here:
 
->     lang: **
+> Lang: **
 
- - 为了使加载速度更快，摒弃了大部分图片。其中包括首页作者 Avatar、文章下小 Avatar 等
- - 文章内**不支持头图功能**（此功能被阉割）
- - 支持图片 Lazyload
- - 支持页面平滑滚动
- - more..
+ - In order to make the load faster, abandon most of the picture. Including the home page by Avatar, the article under Little Avatar and so on
+ - The article does not support header function ** (this feature is castrated)
+ - support picture Lazyload
+ - support page smooth scrolling
+ - more ..
 
-### 启用姿势
+### Enable posture
 
-在 config/system.json 里设置以下字段：
+Set the following fields in config / system.json:
 
- - `Author_Name`（作者昵称）
- - `Author_Introduction`（作者简介）
- - `Author_Image`（作者头像）
+ - `Author_Name` (author nickname)
+ - `Author_Introduction` (author's profile)
+ - `Author_Image` (author avatar)
 
-以上内容中，如果你的 `favicon.ico` 要替换或者修改为 PNG 格式的图片，请自行修改。
+In the above, if your `favicon.ico` is to be replaced or modified to PNG format, please modify it yourself.
 
-如果没有图片或者懒得设置，**请删除这一行，否则可能会报错。**
+If there is no picture or too lazy to set, please delete this line, or may be an error. **
 
-另：虽然确实是去掉了首页的几个头像，但在文章页评论框上，作者简介中的头像并没有去掉。
-所以…别忘了设置好你的 `config/system.json`！
+Another: Although it is really removed from the first few head of the head, but in the article page comment box, the author's profile in the picture and did not remove.
+So ... do not forget to set up your `config / system.json`!
 
 ## License
 
-遵循 [Apache License 2.0](https://github.com/Skimige/ink_Werttin/blob/master/LICENSE)
+Follow the [Apache License 2.0](https://github.com/Skimige/ink_Werttin/blob/master/LICENSE)
