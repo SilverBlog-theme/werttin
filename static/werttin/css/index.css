@@ -100,7 +100,7 @@ a.name {
   margin-top: 30px;
   font-weight: lighter;
   font-size: 36px;
-  text-align: center;
+  text-align: right;
   cursor: default;
   font-family: PTSerif-Regular, 'Open Sans', "Microsoft Jhenghei UI Light", "Microsoft Jhenghei Light";
 }
@@ -109,7 +109,7 @@ a.name {
   margin-top: 10px;
   font-size: 16px;
   color: #bbb;
-  text-align: center;
+  text-align: right;
   font-weight: normal;
   cursor: default;
 }
@@ -151,7 +151,7 @@ a.name {
   text-decoration: none;
   color: #4A4A4A;
   display: block;
-  font-family: PTSerif-Regular, "Microsoft Yahei UI", "Microsoft Yahei";
+  font-family: PTSerif-Regular, "Microsoft Yahei UI";
 }
 .main.page .article-list .article .title .top {
   color: #ccc;
@@ -178,6 +178,7 @@ a.name {
   font-size: 16px;
   margin-top: 10px;
   color: #666;
+  word-break: break-all;
 }
 .main.page .article-list .article .info {
   margin-top: 15px;
@@ -315,7 +316,6 @@ a.name {
 .main.article .content h4,
 .main.article .content h5,
 .main.article .content h6 {
-  font-family: PTSerif-Regular, 'Open Sans', Dengxian, "Microsoft Yahei UI", "Microsoft Yahei";
   font-weight: normal;
 }
 .main.article .content h1 + p,
@@ -423,9 +423,6 @@ a.name {
   max-width: 100%;
   border: 1px solid #eee;
   display: block;
-  opacity: 0.2;
-  transition: opacity 0.3s ease-in;
-  cursor: pointer;
 }
 .main.article .content .image-alt {
   text-align: center;
@@ -511,8 +508,9 @@ a.name {
   margin-top: 50px;
 }
 .main.about .content {
-  margin-top: 80px;
+  margin-top: 36px;
   text-align: center;
+  font-weight: lighter;
 }
 .main.archive,
 .main.tag {

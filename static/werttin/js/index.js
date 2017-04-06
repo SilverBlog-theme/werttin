@@ -1,3 +1,4 @@
+/* @license magnet:?xt=urn:btih:8e4f440f4c65981c5bf93c76d35135ba5064d8b7&dn=apache-2.0.txt Apache 2.0 */
 (function() {
   var timeSince;
 
@@ -16,49 +17,23 @@
     if (interval > 1) {
       return interval + " days ago";
     }
-    interval = Math.floor(seconds / 3600);
-    if (interval > 1) {
-      return interval + " hours ago";
-    }
-    interval = Math.floor(seconds / 60);
-    if (interval > 1) {
-      return interval + " mins ago";
-    }
-    return Math.floor(seconds) + " seconds ago";
+    return "Today";
   };
 
   $(function() {
     $('.date').each(function(idx, item) {
+      console.log(String(idx) + ', ' + String(item));
       var $date, date, timeStr, unixTime;
       $date = $(item);
       timeStr = $date.data('time');
       if (timeStr) {
-        unixTime = Number(timeStr) * 1000;
-        date = new Date(unixTime);
+        date = new Date(timeStr);
         return $date.prop('title', date).find('.from').text(timeSince(date));
       }
     });
     $('pre code').each(function(i, block) {
       return hljs.highlightBlock(block);
     });
-    $('img').each(function(idx, item) {
-      var $item, imageAlt;
-      $item = $(item);
-      if ($item.attr('data-src')) {
-        $item.wrap('<a href="' + $item.attr('data-src') + '" target="_blank"></a>');
-        imageAlt = $item.prop('alt');
-        if ($.trim(imageAlt)) {
-          return $item.parent('a').after('<div class="image-alt">' + imageAlt + '</div>');
-        }
-      }
-    });
-    if ($('img').unveil) {
-      return $('img').unveil(200, function() {
-        return $(this).load(function() {
-          return this.style.opacity = 1;
-        });
-      });
-    }
   });
-
 }).call(this);
+/* @license-end */
