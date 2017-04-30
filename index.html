@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
-    <meta name="description" content="{{ system_config.Project_Description }}">
-    <link rel="stylesheet" href="/static/{{ system_config.Theme }}/css/index.min.css">
-    <link rel="shortcut icon" href="{{ system_config.Project_URL }}/static/user_file/favicon.ico">
+{% include system_config.Theme+"/public/header.html" %}
     <title>{{ system_config.Project_Name }}</title>
+    <meta name="description" content="{{ system_config.Project_Description }}">
     {% include "include/head.html" %}
 </head>
 <body>
@@ -32,9 +25,9 @@
     {% endfor %}
     </ul>
     <section class="page-nav">
-        {% if now_page!=1 %}<a class="prev" href="/index/p/{{ last_page }}{% if static %}.html{% endif %}">Prev</a>{% endif %}
+        {% if now_page!=1 %}<a class="prev" href="{% if static %}/index_{{ last_page }}.html{% else %}/index/p/{{ last_page }}{% endif %}">Prev</a>{% endif %}
         <span class="nav">{{ now_page }} / {{ page_row }}</span>
-        {% if now_page!=page_row and page_row !=1 %}<a class="next" href="/index/p/{{ next_page }}{% if static %}.html{% endif %}">Next</a>{% endif %}
+        {% if now_page!=page_row and page_row !=1 %}<a class="next" href="{% if static %}/index_{{ next_page }}.html{% else %}/index/p/{{ next_page }}{% endif %}">Next</a>{% endif %}
         </section>
     </article>
 </article>

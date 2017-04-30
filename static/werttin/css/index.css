@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'PTSerif-Regular';
-  src: url('fonts/PTSerif-Regular.eot');
-  src: url('fonts/PTSerif-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/PTSerif-Regular.otf') format('otf'), url('fonts/PTSerif-Regular.woff') format('woff'), url('fonts/PTSerif-Regular.ttf') format('truetype'), url('fonts/PTSerif-Regular.svg#PTSerif-Regular') format('svg');
+  src: url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Regular.eot');
+  src: url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Regular.eot?#iefix') format('embedded-opentype'), url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Regular.otf') format('otf'), url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Regular.woff') format('woff'), url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Regular.ttf') format('truetype'), url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Regular.svg#PTSerif-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PTSerif-Bold';
-  src: url('fonts/PTSerif-Bold.eot');
-  src: url('fonts/PTSerif-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/PTSerif-Bold.otf') format('otf'), url('fonts/PTSerif-Bold.woff') format('woff'), url('fonts/PTSerif-Bold.ttf') format('truetype'), url('fonts/PTSerif-Bold.svg#PTSerif-Bold') format('svg');
+  src: url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Bold.eot');
+  src: url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Bold.eot?#iefix') format('embedded-opentype'), url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Bold.otf') format('otf'), url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Bold.woff') format('woff'), url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Bold.ttf') format('truetype'), url('https://dn-tcdw.qbox.me/werttin-font/PTSerif-Bold.svg#PTSerif-Bold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
@@ -178,7 +178,7 @@ a.name {
   font-size: 16px;
   margin-top: 10px;
   color: #666;
-  word-break: break-all;
+  word-break: break-word;
 }
 .main.page .article-list .article .info {
   margin-top: 15px;

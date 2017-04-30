@@ -1,14 +1,12 @@
 <footer class="footer">
 <span class="copyright">
-<a href="/">{{ system_config.Project_Name }}</a> © <script>document.write(new Date().getFullYear());</script>
+    <a href="/">{{ system_config.Project_Name }}</a> © {{ now_time|datetimeformat("%Y") }}
 </span>
-<span class="publish">Theme <a href="http://ikevin.in/" target="_blank">Skimige</a> / Powered By <a href="http://github.com/qwe7002/SmartBlog" target="_blank">SmartBlog</a></span>
+<span class="publish">Few rights <a href="/about">reserved</a> / Theme <a href="http://ikevin.in/" target="_blank">Skimige</a> / Powered By <a href="http://github.com/qwe7002/SmartBlog" target="_blank">SmartBlog</a></span>
 </footer>
 {% include "include/foot.html" %}
-<script src="/static/{{ system_config.Theme }}/js/jquery-1.11.2.min.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.9.0/highlight.min.js"></script>
 <script src="/static/{{ system_config.Theme }}/js/index.js"></script>
-<script src="/static/{{ system_config.Theme }}/js/SmoothScroll.js"></script>
-<script src="/static/{{ system_config.Theme }}/js/highlight.pack.js"></script>
-<script src="/static/{{ system_config.Theme }}/js/jquery.unveil.js"></script>
 </body>
 </html>
