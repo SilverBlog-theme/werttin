@@ -1,15 +1,16 @@
 # Ink_Werttin
 
-> An ink theme based on offical theme, and adapted for SmartBlog
+> An ink theme based on offical theme, and adapted for SilverBlog
 
-This topic is the [SmartBlog](https://github.com/qwe7002/SmartBlog) adaptation version of [Skimige Version](https://github.com/Skimige/ink_Werttin).
+This topic is the [SilverBlog](https://github.com/SilverBlogTeam/SilverBlog) adaptation version of [Skimige Version](https://github.com/Skimige/ink_Werttin).
+
 ## Instructions for use
 
 ### Preview
 
 The easiest way is to visit my blog ~ [portal](http://ikevin.in)
 
-[SmartBlog version, slightly different in detail](https://www.tcdw.net/)
+[SilverBlog version, slightly different in detail](https://www.tcdw.net/)
 
 The following screenshots may be a bit old.
 
@@ -18,30 +19,25 @@ The following screenshots may be a bit old.
 ### download
 
 ```bash
-cd /path/to/your/SmartBlog/templates
-git clone https://github.com/smartblogteam/smartblog-theme-werttin
-mv smartblog-theme-werttin werttin
+cd /path/to/your/SilverBlog/templates
+git clone git://github.com/SilverBlogTeam/werttin
 ln -s $PWD/werttin/static/werttin $PWD/static/werttin
 ```
 
 ### Features
 
- - the default font for `Microsoft Yahei UI`, nothing to sans-serif` and` serif`
- - support Chinese / English two languages, please modify the root directory of the `config.yml` here:
-
-> Lang: **
-
- - In order to make the load faster, abandon most of the picture. Including the home page by Avatar, the article under Little Avatar and so on
- - The article does not support header function ** (this feature is castrated)
- - more ..
+* the default font for `Microsoft Yahei UI`, nothing to sans-serif` and` serif`
+* In order to make the load faster, abandon most of the picture. Including the home page by Avatar, the article under Little Avatar and so on
+* The article does not support header function ** (this feature is castrated)
+* more ..
 
 ### Enable posture
 
 Set the following fields in config / system.json:
 
- - `Author_Name` (author nickname)
- - `Author_Introduction` (author's profile)
- - `Author_Image` (author avatar)
+* `Author_Name` (author nickname)
+* `Author_Introduction` (author's profile)
+* `Author_Image` (author avatar)
 
 In the `public/header.html`, if your `favicon.ico` is to be replaced or modified to PNG format, please modify it yourself.
 
@@ -50,4 +46,4 @@ So ... do not forget to set up your `config / system.json`!
 
 ## License
 
-Follow the [Apache License 2.0](https://github.com/Skimige/ink_Werttin/blob/master/LICENSE)
+Follow the [Apache License 2.0](https://github.com/SilverBlogTeam/werttin/blob/master/LICENSE)
