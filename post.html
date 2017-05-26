@@ -10,7 +10,7 @@
     </ul>
     <article class="main article">
         <h1 class="title">{{ page_info.title }}</h1>
-        <section class="info"><span class="date" data-time="{{ page_info.time }}"><span class="from"></span></span></section>
+        <section class="info"><span class="date" data-time="{{ page_info.time }}"><span class="from">{{ page_info.time }}</span></span></section>
         <article class="content">{{ content|safe }}</article>
         <section class="author">
             <div class="avatar" style="background-image: url({{ system_config.Author_Image }});"></div>
