@@ -19,7 +19,7 @@
         <a class="title" href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a>
         <section class="preview">{{ page_info.excerpt }}</section>
         <section class="info">
-            <span class="date" data-time="{{ page_info.time }}"><span class="from">{{ page_info.time }}</span></span>
+            <span class="date">{{ page_info.time }}</span>
         </section>
     </li>
     {% endfor %}

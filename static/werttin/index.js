@@ -25,7 +25,7 @@ timeSince = function(date) {
     return Math.floor(seconds) + " seconds ago";
 };
 
-var dateItem = document.getElementsByClassName("from");
+var dateItem = document.getElementsByClassName("date");
 for (var i in dateItem) {
     if (dateItem[i].innerHTML != "") {
         dateItem[i].innerHTML = timeSince(new Date(dateItem[i].innerHTML).getTime());
