@@ -19,9 +19,7 @@ The following screenshots may be a bit old.
 ### download
 
 ```bash
-cd /path/to/your/SilverBlog/templates
-git clone git://github.com/SilverBlogTeam/werttin
-ln -s $PWD/werttin/static/werttin $PWD/static/werttin
+curl https://raw.githubusercontent.com/SilverBlogTeam/werttin/master/install.sh | bash
 ```
 
 ### Features
