@@ -19,6 +19,7 @@ The following screenshots may be a bit old.
 ### download
 
 ```bash
+cd templates
 curl https://raw.githubusercontent.com/SilverBlogTeam/werttin/master/install.sh | bash
 ```
 
