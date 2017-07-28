@@ -18,9 +18,8 @@
 ### 下载
 
 ```bash
-cd /path/to/your/SilverBlog/templates
-git clone git://github.com/SilverBlogTeam/werttin
-ln -s $PWD/werttin/static/werttin $PWD/static/werttin
+cd templates
+curl https://raw.githubusercontent.com/SilverBlogTeam/werttin/master/install.sh | bash
 ```
 
 ### 功能
