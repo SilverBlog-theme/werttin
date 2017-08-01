@@ -7,7 +7,7 @@ if [ ! -d "werttin" ]; then
     git clone https://github.com/SilverBlogTeam/werttin.git
     cd werttin
 fi
-ln -s $(pwd)/static ../static/werttin
+ln -s $(pwd)/static/werttin ../static/werttin
 if [ -f "config.json" ]; then
     cp config.example.json config.json
     vim config.json
