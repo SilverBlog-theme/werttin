@@ -2,7 +2,7 @@
     <title>{{ system_config.Project_Name }}</title>
     <meta name="description" content="{{ system_config.Project_Description }}">{% if now_page!=page_row and page_row !=1 %}
     <link rel="next" href="/index/p/{{ now_page + 1 }}{% if static %}.html{% endif %}">{% endif %}
-    {% include "include/head.html" %}
+    {% include "include/head.html" ignore missing %}
 </head>
 <body>
 <article class="container">
