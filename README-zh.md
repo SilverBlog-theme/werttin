@@ -37,6 +37,8 @@ curl https://raw.githubusercontent.com/SilverBlogTeam/werttin/master/install.sh 
 * `Author_Introduction`（作者简介）
 * `Author_Image`（作者头像）
 
+为了更加精确地显示未来博文的发表时间，请将 `config/system.json` 的 `Time_Format` 值修改为 `%Y-%m-%dT%H:%M:%S.000`。
+
 在 `public/header.html` 中，如果你的 `favicon.ico` 要替换或者修改为 PNG 格式的图片，请自行修改。
 
 另：虽然确实是去掉了首页的几个头像，但在文章页评论框上，作者简介中的头像并没有去掉。

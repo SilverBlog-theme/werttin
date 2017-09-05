@@ -38,6 +38,8 @@ Set the following fields in config / system.json:
 * `Author_Introduction` (author's profile)
 * `Author_Image` (author avatar)
 
+To display publish time accurately for further article, set `Time_Format` to `%Y-%m-%dT%H:%M:%S.000` in `config/system.json`.
+
 In the `public/header.html`, if your `favicon.ico` is to be replaced or modified to PNG format, please modify it yourself.
 
 Another: Although it is really removed from the first few head of the head, but in the article page comment box, the author's profile in the picture and did not remove.
