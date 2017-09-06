@@ -38,7 +38,7 @@ Set the following fields in config / system.json:
 * `Author_Introduction` (author's profile)
 * `Author_Image` (author avatar)
 
-To display publish time accurately for further article, set `Time_Format` to `%Y-%m-%dT%H:%M:%S.000` in `config/system.json`.
+To display publish time accurately for further article, set `Time_Format` to `%Y-%m-%dT%H:%M:%S.000+08:00` in `config/system.json`. The `+08:00` depends on the time zone setting of your server. Check out [this](https://en.wikipedia.org/wiki/ISO_8601) for more details.
 
 In the `public/header.html`, if your `favicon.ico` is to be replaced or modified to PNG format, please modify it yourself.
 

@@ -24,7 +24,7 @@ curl https://raw.githubusercontent.com/SilverBlogTeam/werttin/master/install.sh 
 
 ### 功能
 
-* 默认字体为 `Microsoft Yahei UI` ，对 `sans-serif` 和 `serif` 没啥好感
+* 默认字体为 `Microsoft Yahei UI` ，因为对 `sans-serif` 和 `serif` 没啥好感
 * 为了使加载速度更快，摒弃了大部分图片。其中包括首页作者 Avatar、文章下小 Avatar 等
 * 文章内**不支持头图功能**（此功能被阉割）
 * more..
@@ -37,7 +37,7 @@ curl https://raw.githubusercontent.com/SilverBlogTeam/werttin/master/install.sh 
 * `Author_Introduction`（作者简介）
 * `Author_Image`（作者头像）
 
-为了更加精确地显示未来博文的发表时间，请将 `config/system.json` 的 `Time_Format` 值修改为 `%Y-%m-%dT%H:%M:%S.000`。
+为了更加精确地显示未来博文的发表时间，请将 `config/system.json` 的 `Time_Format` 值修改为 `%Y-%m-%dT%H:%M:%S.000+08:00`。后面的 `+08:00` 视你服务器的时区而定。更具体的请见 [这里](https://zh.wikipedia.org/wiki/ISO_8601)。
 
 在 `public/header.html` 中，如果你的 `favicon.ico` 要替换或者修改为 PNG 格式的图片，请自行修改。
 
