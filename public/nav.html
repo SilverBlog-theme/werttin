@@ -1,4 +1,4 @@
-<li class="menu-item"><a href="/index{% if static %}.html{% endif %}">首页</a></li>
+<li class="menu-item"><a href="/{% if static %}index.html{% endif %}">首页</a></li>
 {% for item in menu_list %}{% if "absolute" in item %}
         {% set url = item.absolute %}
     {% else %}
