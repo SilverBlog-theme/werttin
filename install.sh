@@ -4,11 +4,11 @@ if [ $(basename `pwd`) != "templates" ];then
     exit
 fi
 if [ ! -d "werttin" ]; then
-    git clone https://github.com/SilverBlogTeam/werttin.git
+    git clone https://github.com/SilverBlogTheme/werttin.git
     cd werttin
 fi
 ln -s $(pwd)/static/werttin ../static/werttin
-if [ -f "config.json" ]; then
+if [ ! -f "config.json" ]; then
     cp config.example.json config.json
     vim config.json
 fi
