@@ -25,7 +25,7 @@ curl https://raw.githubusercontent.com/SilverBlogTeam/werttin/master/install.sh 
 
 ### Features
 
-* the default font for `Microsoft Yahei UI`, nothing to sans-serif` and` serif`
+* the default font is `Microsoft Yahei UI`, nothing to `sans-serif` and` serif`
 * In order to make the load faster, abandon most of the picture. Including the home page by Avatar, the article under Little Avatar and so on
 * The article does not support header function ** (this feature is castrated)
 * more ..
