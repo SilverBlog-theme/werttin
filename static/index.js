@@ -26,7 +26,9 @@ timeSince = function (date) {
 var dateItem = document.getElementsByClassName("date");
 for (var i in dateItem) {
     if (dateItem[i].innerHTML != "") {
-        dateItem[i].innerHTML = timeSince(new Date(dateItem[i].innerHTML).getTime());
+        let enTime = new Date(dateItem[i].innerHTML);
+        dateItem[i].title = enTime.toUTCString();
+        dateItem[i].innerHTML = timeSince(enTime.getTime());
     }
 }
 
