@@ -1,0 +1,21 @@
+{
+  "name": "werttin",
+  "version": "1.0.0",
+  "description": "werttin theme ported to SilverBlog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilverBlogTheme/werttin.git"
+  },
+  "author": "tcdw <admin@tcdw.net>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SilverBlogTheme/werttin/issues"
+  },
+  "homepage": "https://github.com/SilverBlogTheme/werttin#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-header": "^2.0.1",
+    "gulp-minify": "^2.1.0"
+  }
+}
