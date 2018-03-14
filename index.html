@@ -1,8 +1,8 @@
 {% include system_config.Theme+"/public/header.html" %}
     <title>{{ system_config.Project_Name }}</title>
     <meta name="description" content="{{ system_config.Project_Description }}">{% if now_page!=page_row and page_row !=1 %}
-    <link rel="next" href="/index/p/{{ now_page + 1 }}{% if static %}.html{% endif %}">{% endif %}{% if now_page!=1 %}
-    <link rel="prev" href="/index/p/{{ now_page - 1 }}{% if static %}.html{% endif %}">{% endif %}
+    <link rel="next" href="/index/{{ now_page + 1 }}">{% endif %}{% if now_page!=1 %}
+    <link rel="prev" href="/index/{{ now_page - 1 }}">{% endif %}
     {% include "include/head.html" ignore missing %}
 </head>
 <body>
@@ -18,7 +18,7 @@
     <ul class="article-list">
     {% for page_info in page_list %}
     <li class="article">
-        <a class="title" href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a>
+        <a class="title" href="/{{ page_info.name }}">{{ page_info.title }}</a>
         <section class="preview">{{ page_info.excerpt }}</section>
         <section class="info">
             <span class="date">{{ page_info.time }}</span>
@@ -27,9 +27,9 @@
     {% endfor %}
     </ul>
     <section class="page-nav">
-        {% if now_page!=1 %}<a class="prev" href="/index/p/{{ now_page - 1 }}{% if static %}.html{% endif %}">Prev</a>{% endif %}
+        {% if now_page!=1 %}<a class="prev" href="/index/{{ now_page - 1 }}">Prev</a>{% endif %}
         <span class="nav">{{ now_page }} / {{ page_row }}</span>
-        {% if now_page!=page_row and page_row !=1 %}<a class="next" href="/index/p/{{ now_page + 1 }}{% if static %}.html{% endif %}">Next</a>{% endif %}
+        {% if now_page!=page_row and page_row !=1 %}<a class="next" href="/index/{{ now_page + 1 }}">Next</a>{% endif %}
         </section>
     </article>
 </article>
