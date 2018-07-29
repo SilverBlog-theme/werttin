@@ -14,15 +14,6 @@ gulp.task('pack-css', () => {
         .pipe(gulp.dest('static'));
 });
 
-gulp.task('pack-js', () => {
-    return gulp.src('source/index.js')
-        .pipe(minify({
-            ext: {
-                min: '.js'
-            },
-            noSource: true
-        }))
-        .pipe(gulp.dest('static'));
-});
-
-gulp.task('default', ['pack-js', 'pack-css']);
+gulp.task('default', gulp.series('pack-css', (done) => {
+    done();
+}));
