@@ -18,7 +18,7 @@
     <ul class="article-list">
     {% for page_info in page_list %}
     <li class="article">
-        <a class="title" href="/{{ page_info.name }}">{{ page_info.title }}</a>
+        <a class="title"href="/post/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a>
         <section class="preview">{{ page_info.excerpt }}</section>
         <section class="info">
             <span class="date">{{ page_info.time }}</span>
